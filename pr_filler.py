@@ -1,7 +1,7 @@
+import sys
+import time
 import keyboard
 from pynput.mouse import Button, Controller
-import time
-
 
 mouse = Controller()
 
@@ -38,4 +38,4 @@ while True:
     if event.event_type == keyboard.KEY_DOWN and event.name == 'esc':
         break
 
-exit(0)
+sys.exit(0)
